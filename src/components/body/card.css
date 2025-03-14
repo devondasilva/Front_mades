@@ -1,0 +1,52 @@
+.slider-container {
+    width: 500px; /* Adjust as needed */
+    height: 300px; /* Adjust as needed */
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .slider {
+    width: 300%; /* 3 times the container width for 3 slides */
+    height: 100%;
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Smooth transition */
+    transform: translateX(var(--x)); /* Use CSS variable for dynamic positioning */
+  }
+  
+  .slide {
+    width: calc(100% / 3); /* Width of each slide */
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative; /* For positioning hover effect elements */
+    overflow: hidden; /* Hide content that overflows on hover */
+  }
+  
+  .slide:hover::before { /* Example hover effect */
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent overlay */
+      transform: scale(1.1); /* Slightly zoom the overlay */
+      transition: transform 0.3s ease; /* Smooth transition */
+  }
+  
+  .slider-controls {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+  }
+  
+  .slider-controls button {
+    padding: 5px 10px;
+    margin: 0 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+  }

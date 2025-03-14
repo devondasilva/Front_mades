@@ -1,0 +1,23 @@
+
+
+.contenant{
+
+    background : -moz-linear-gradient(0% 50% 0deg,rgba(255, 255, 255, 1) 0%,rgba(37, 142, 205, 1) 100%);
+  background : -webkit-linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(37, 142, 205, 1) 100%);
+  background : -webkit-gradient(linear,0% 50% ,100% 50% ,color-stop(0,rgba(255, 255, 255, 1) ),color-stop(1,rgba(37, 142, 205, 1) ));
+  background : -o-linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(37, 142, 205, 1) 100%);
+  background : -ms-linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(37, 142, 205, 1) 100%);
+  background : linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(37, 142, 205, 1) 100%);
+
+}
+img{
+    width: 100%;
+}
+
+
+.haut h2{
+  font-family: 'Lexend2';
+  font-weight : bold;
+  text-transform : uppercase;
+  color : #0A5473;
+}
