@@ -105,7 +105,7 @@ const Header: React.FC = () => {
                     onClick={() => handleval(item.id)}
                     className={`text-[12px] font-[Lex-regular] p-6 uppercase ${
                       val === item.id
-                        ? "bg-orange-600 text-white"
+                        ? "bg-sky-600 text-white"
                         : "bg-white text-slate-700"
                     }`}
                   >
@@ -115,7 +115,7 @@ const Header: React.FC = () => {
 
                 <button
                   className={`text-[12px] font-[Lex-regular] p-6 uppercase ${
-                    val === 4 ? "bg-orange-600 text-white" : "bg-white text-slate-700"
+                    val === 4 ? "bg-sky-600 text-white" : "bg-white text-slate-700"
                   }`}
                   onClick={() => handleval(4)}
                 >
@@ -123,7 +123,7 @@ const Header: React.FC = () => {
                 </button>
                 <button
                   className={`text-[12px] font-[Lex-regular] p-6 uppercase ${
-                    val === 5 ? "bg-orange-600 text-white" : "bg-white text-slate-700"
+                    val === 5 ? "bg-sky-600 text-white" : "bg-white text-slate-700"
                   }`}
                   onClick={() => handleval(5)}
                 >
@@ -134,7 +134,7 @@ const Header: React.FC = () => {
                 <button
                   onClick={() => changeLanguage("fr")}
                   className={`px-2 py-1 text-sm font-semibold  rounded-full h-[50px] w-[50px] ${
-                    i18n.language === "fr" ? "text-white bg-red-500" : "text-red-500 bg-white"
+                    i18n.language === "fr" ? "text-white bg-sky-700" : "text-sky-700 bg-white"
                   }`}
                 >
                   🇫🇷 FR
@@ -142,7 +142,7 @@ const Header: React.FC = () => {
                 <button
                   onClick={() => changeLanguage("en")}
                   className={`px-2 py-1 text-sm font-semibold rounded-full h-[50px] w-[50px] ${
-                    i18n.language === "en" ? "text-white bg-red-500" : "text-red-500 bg-white"
+                    i18n.language === "en" ? "text-white bg-sky-700" : "text-sky-700 bg-white"
                   }`}
                 >
                   🇬🇧 EN
@@ -165,7 +165,7 @@ const Header: React.FC = () => {
                             onClick={() => handleval(item.id)}
                             className={`text-gray-800 font-[Lexend2] ${
                               val === item.id
-                                ? "text-orange-600 "
+                                ? "text-sky-600 "
                                 : " text-slate-700"
                             }`}
                           >
@@ -177,7 +177,7 @@ const Header: React.FC = () => {
                     <MenuItem>
                       <button className={`text-gray-800 font-[Lexend2] ${
                               val === 4
-                                ? "text-orange-600 "
+                                ? "text-sky-600 "
                                 : " text-slate-700"
                             }`}
                             onClick={() => handleval(4)}
@@ -188,7 +188,7 @@ const Header: React.FC = () => {
                     <MenuItem>
                     <button className={`text-gray-800 font-[Lexend2] ${
                               val === 5
-                                ? "text-orange-600 "
+                                ? "text-sky-600"
                                 : " text-slate-700"
                             }`}
                             onClick={() => handleval(5)}
