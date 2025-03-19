@@ -80,7 +80,7 @@ export default function Foot() {
         <div className="max-w-[1200px] mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 items-center uppercase">
             {/* Logo */}
-            <div className="bg-white flex justify-center items-center h-full ">
+            <div className="bg-white flex justify-center items-center h-full py-6">
               <img src={Logmades} alt="logo mades" className="max-h-12 w-auto" data-aos="fade-up"/>
             </div>
             {/* Navigation */}

@@ -13,7 +13,7 @@ export default function Video() {
 
  
   return (
-    <div className="flex justify-center py-8 ">
+    <div className="flex justify-center py-8 bg-slate-50">
       <div className="w-full max-w-[1200px] px-4">
         {/* Vidéo YouTube */}
         <div className="flex justify-center rounded-2xl">
