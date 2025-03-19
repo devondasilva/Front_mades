@@ -11,6 +11,7 @@ export default function Video() {
     console.error("Erreur lors du chargement de la vidéo.");
   };
 
+ 
   return (
     <div className="flex justify-center py-8 ">
       <div className="w-full max-w-[1200px] px-4">

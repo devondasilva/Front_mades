@@ -11,7 +11,7 @@ interface CarouselProps {
   height?: string;
 }
 
-const Board: React.FC<CarouselProps> = ({ images, height = 'h-56 md:h-[600px]'  }) => {
+const Board: React.FC<CarouselProps> = ({ images, height = 'h-[700px] md:h-[600px]'  }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const carouselRef = useRef(null);
 

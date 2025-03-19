@@ -15,7 +15,12 @@ import 'aos/dist/aos.css';
 import { Suspense } from 'react'; // Import Suspense
 import '../i18n.js';
 import Header from './components/Header/header.js';
-import Dos from './pages/Dos.js';
+import SaveImage from './pages/rechercheValeur.js';
+import Dashboard from './pages/Dashboard.js';
+import AfficherDossier from './pages/AfficherDossier.js';
+import Update from './pages/Update.js';
+import RechercheValeur from './pages/rechercheValeur.js';
+
 
 
 
@@ -38,8 +43,11 @@ return (
           <Route path="/Galerie" element={<Gallery />} />
           <Route path="/Dossier" element={<Dossier />} />
           <Route path="/Article" element={<Articles />} />
-          <Route path="/Dossier1" element={<Dos />} />
-
+          <Route path="/upload" element={<SaveImage />} />
+          <Route path="/Dashboard" element={<Dashboard />} />
+          <Route path='/afficher/:id' element={<AfficherDossier/>} />
+          <Route path='/update/:id' element={<Update/>} />
+          <Route path='/recherche' element={<RechercheValeur/>} />
         </Routes>
       </Router>
     </Suspense>

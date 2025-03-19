@@ -133,23 +133,23 @@ const Header: React.FC = () => {
               <div className="flex items-center space-x-2">
                 <button
                   onClick={() => changeLanguage("fr")}
-                  className={`px-2 py-1 text-sm font-semibold ${
-                    i18n.language === "fr" ? "text-blue-500" : "text-gray-600"
+                  className={`px-2 py-1 text-sm font-semibold  rounded-full h-[50px] w-[50px] ${
+                    i18n.language === "fr" ? "text-white bg-red-500" : "text-red-500 bg-white"
                   }`}
                 >
                   🇫🇷 FR
                 </button>
                 <button
                   onClick={() => changeLanguage("en")}
-                  className={`px-2 py-1 text-sm font-semibold ${
-                    i18n.language === "en" ? "text-blue-500" : "text-gray-600"
+                  className={`px-2 py-1 text-sm font-semibold rounded-full h-[50px] w-[50px] ${
+                    i18n.language === "en" ? "text-white bg-red-500" : "text-red-500 bg-white"
                   }`}
                 >
                   🇬🇧 EN
                 </button>
               </div>
 
-              <div className="md:hidden">
+              <div className="md:hidden my-4 pe-2">
                 <Dropdown open={isMenuOpen} onOpenChange={toggleMenu}>
                   <MenuButton
                     slots={{ root: IconButton }}
@@ -157,24 +157,47 @@ const Header: React.FC = () => {
                   >
                     <FaBars />
                   </MenuButton>
-                  <Menu>
+                  <Menu  className="w-full ">
+                    <div className="font-[Lexend2]">
                     {menuItems.map((item) => (
                       <MenuItem key={item.title}>
-                        <a href={item.link} className="text-gray-800 font-[Lexend]">
-                          {t(item.title)}
-                        </a>
+                          <button
+                            onClick={() => handleval(item.id)}
+                            className={`text-gray-800 font-[Lexend2] ${
+                              val === item.id
+                                ? "text-orange-600 "
+                                : " text-slate-700"
+                            }`}
+                          >
+                            {t(item.title)}
+                          </button>
                       </MenuItem>
-                    ))}
+                  
+                ))}
                     <MenuItem>
-                      <a href="/Nos_contacts" className="text-gray-800 font-[Lexend]">
+                      <button className={`text-gray-800 font-[Lexend2] ${
+                              val === 4
+                                ? "text-orange-600 "
+                                : " text-slate-700"
+                            }`}
+                            onClick={() => handleval(4)}
+                            >
                         {t("Nous contactez")}
-                      </a>
+                      </button>
                     </MenuItem>
                     <MenuItem>
-                      <a href="/Dossier" className="text-gray-800 font-[Lexend]">
+                    <button className={`text-gray-800 font-[Lexend2] ${
+                              val === 5
+                                ? "text-orange-600 "
+                                : " text-slate-700"
+                            }`}
+                            onClick={() => handleval(5)}
+                            >
                         {t("Soumettre son dossier")}
-                      </a>
+                      </button>
                     </MenuItem>
+                    </div>
+                    
                   </Menu>
                 </Dropdown>
               </div>
