@@ -134,7 +134,7 @@ const Header: React.FC = () => {
                 <button
                   onClick={() => changeLanguage("fr")}
                   className={`px-2 py-1 text-sm font-semibold  rounded-full h-[50px] w-[50px] ${
-                    i18n.language === "fr" ? "text-white bg-sky-700" : "text-sky-700 bg-white"
+                    i18n.language === "fr" ? "text-white bg-sky-600" : "text-sky-600 bg-white"
                   }`}
                 >
                   🇫🇷 FR
@@ -142,7 +142,7 @@ const Header: React.FC = () => {
                 <button
                   onClick={() => changeLanguage("en")}
                   className={`px-2 py-1 text-sm font-semibold rounded-full h-[50px] w-[50px] ${
-                    i18n.language === "en" ? "text-white bg-sky-700" : "text-sky-700 bg-white"
+                    i18n.language === "en" ? "text-white bg-sky-600" : "text-sky-600 bg-white"
                   }`}
                 >
                   🇬🇧 EN

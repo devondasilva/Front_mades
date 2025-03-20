@@ -49,7 +49,7 @@ const Reviews: React.FC = () => {
       <div className="w-full max-w-[1200px]">
         <div>
           <p
-            className="flex justify-center text-lg text-black my-1 uppercase font-bold"
+            className=" text-center text-lg text-black my-1 uppercase font-bold"
             style={{
               fontFamily: "Lexend2",
               fontSize: "25px",

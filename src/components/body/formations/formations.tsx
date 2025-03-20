@@ -7,6 +7,7 @@ import Im1 from "../../../assets/Images/beachtennis/freecompress-IMG_4528 (1).jp
 import Im2 from "../../../assets/Images/padel/freecompress-IMG_3333.jpg";
 import Im3 from "../../../assets/Images/autres/freecompress-img4_tennis.jpg";
 import Im4 from "../../../assets/Images/squash/squash-01.jpg";
+import './formation.css'
 
 const images = [
   {

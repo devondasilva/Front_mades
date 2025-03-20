@@ -69,7 +69,7 @@ export default function Foot() {
     <>
       <div className="my-10 max-w-[1200px] mx-auto">
         <p
-          className="text-center text-sky-700 font-semibold mb-4"
+          className="text-center text-sky-600 font-semibold mb-4"
           style={{ fontFamily: "Lexend2", fontSize: "35px" }}
         >
           NOS PARTENAIRES

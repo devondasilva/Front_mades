@@ -14,8 +14,11 @@ export default function Home() {
   return (
     <>
         
-      <Stats />
-      <Formations />
+        <div className="bg-slate-200">
+          <Stats />
+          <Formations />
+        </div>
+      
       <Video />
       <Add />
       <Reviews />

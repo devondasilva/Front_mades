@@ -22,7 +22,7 @@ export default function Video() {
               videoId="RVwRHsahcII"
               className="rounded-2xl" // ID de la vidéo YouTube
               opts={{
-                height: "450", // Hauteur fixe pour grands écrans
+                height: "600", // Hauteur fixe pour grands écrans
                 width: "100%",
                  // S'adapte à la largeur du conteneur
                 playerVars: {

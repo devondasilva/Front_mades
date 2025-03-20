@@ -44,7 +44,7 @@ const Partners: React.FC = () => {
           <div className="text-center mt-4 sm:block hidden">
             <button
               onClick={() => setShowAll(true)}
-              className="bg-sky-700 text-white px-4 py-2 rounded hover:bg-sky-800">
+              className="bg-sky-600 text-white px-4 py-2 rounded hover:bg-sky-700">
               Afficher plus
             </button>
           </div>

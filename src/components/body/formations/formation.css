@@ -1,0 +1,15 @@
+.swiper-button-next,
+.swiper-button-prev {
+  color: rgb(3, 71, 138); 
+  font-weight: bold;/* Change la couleur des boutons en rouge */
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 20px; /* Change la taille de l'icône */
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    color: rgb(3, 71, 138); /* Change la couleur au survol */
+}
